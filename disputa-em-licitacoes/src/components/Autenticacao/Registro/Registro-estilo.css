@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+.site-boas-vindas-container {
+  width: 50%;
+  margin: 10px;
+  border: 10px;
+}
+.site-titulo {
+  font-size: 48px;
+  text-align: center;
+}
+
+.site-formulario-registro {
+  width: 50%;
+  margin: 20px;
+  border: 20px;
+}
+
+.primeiro {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.segundo-item {
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: flex;
+  gap: 5px;
+}

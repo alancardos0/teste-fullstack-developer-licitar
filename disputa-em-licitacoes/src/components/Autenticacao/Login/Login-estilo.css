@@ -1,0 +1,23 @@
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 15px;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  padding: 24px;
+  align-content: center;
+  width: 390px;
+  padding: 77px 70px 100px;
+}
+
+.primeiro-item {
+  margin-bottom: 20px;
+}
