@@ -12,32 +12,32 @@ amigável e responsiva e atender aos seguintes critérios:
 ### Requisitos Front End
 -[x] Desenvolver utilizando React e TypeScript.<br>
 -[x] Usar MaterialUI como framework UI. (opcional)<br>
--[] Usar Formik para gerenciamento de formulários. (opcional)<br>
--[] Usar Yup para validação de dados. (opcional)<br>
--[] Usar Axios para realizar requisições ao backend. (opcional)<br>
--[] Implementar WebSocket para atualização em tempo real. (opcional)<br>
+-[ ] Usar Formik para gerenciamento de formulários. (opcional)<br>
+-[ ] Usar Yup para validação de dados. (opcional)<br>
+-[ ] Usar Axios para realizar requisições ao backend. (opcional)<br>
+-[ ] Implementar WebSocket para atualização em tempo real. (opcional)<br>
 
 ### Funcionalidades do Front End
 -[x] Tela de login: uma tela onde o usuário deve fazer login para acessar a tela de
-disputa.
--[] Tela de disputa: uma tela onde os usuários logados podem participar de uma
-disputa de lance.
--[] Ao enviar um lance, o sistema deve verificar se o valor é menor que o valor de
-referência e menor que o último lance, respeitando o intervalo entre lances.
--[] O usuário deve receber um alerta em caso de erro e sucesso no seu lance.
+disputa.<br>
+-[ ] Tela de disputa: uma tela onde os usuários logados podem participar de uma
+disputa de lance.<br>
+-[ ] Ao enviar um lance, o sistema deve verificar se o valor é menor que o valor de
+referência e menor que o último lance, respeitando o intervalo entre lances.<br>
+-[ ] O usuário deve receber um alerta em caso de erro e sucesso no seu lance.
 
 ### Backend Requisitos:
--[x] Desenvolver utilizando Nestjs e TypeScript.
+-[x] Desenvolver utilizando Nestjs e TypeScript.<br>
 -[x] Implementar autenticação JWT para permitir apenas usuários logados acessem a
-aplicação
--[x] Usar um banco de dados SQL para armazenar dados do aplicativo. (Opcional)
--[] Implementar WebSocket para atualização em tempo real. (Opcional)
--[x] Usar Class Validator para validar dados de entrada de requisições. (Opcional)
+aplicação<br>
+-[x] Usar um banco de dados SQL para armazenar dados do aplicativo. (Opcional)<br>
+-[ ] Implementar WebSocket para atualização em tempo real. (Opcional)<br>
+-[x] Usar Class Validator para validar dados de entrada de requisições. (Opcional)<br>
 
 ### Funcionalidades do Back End
--[] Implementar uma API que permita a criação de disputas e lances.
--[] As disputas devem iniciar automaticamente após o término da anterior, com um
-limite de tempo de 10 minutos para cada disputa.
+-[ ] Implementar uma API que permita a criação de disputas e lances.<br>
+-[ ] As disputas devem iniciar automaticamente após o término da anterior, com um
+limite de tempo de 10 minutos para cada disputa.<br>
 
 
 ### Melhorias Futuras
