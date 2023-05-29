@@ -10,12 +10,12 @@ Para este teste técnico, você deve desenvolver um aplicativo web de disputa de
 base nos requisitos especificados abaixo. O aplicativo deve ter uma interface de usuário
 amigável e responsiva e atender aos seguintes critérios:
 ### Requisitos Front End
--[x] Desenvolver utilizando React e TypeScript.
--[x] Usar MaterialUI como framework UI. (opcional)
--[] Usar Formik para gerenciamento de formulários. (opcional)
--[] Usar Yup para validação de dados. (opcional)
--[] Usar Axios para realizar requisições ao backend. (opcional)
--[] Implementar WebSocket para atualização em tempo real. (opcional)
+-[x] Desenvolver utilizando React e TypeScript.<br>
+-[x] Usar MaterialUI como framework UI. (opcional)<br>
+-[] Usar Formik para gerenciamento de formulários. (opcional)<br>
+-[] Usar Yup para validação de dados. (opcional)<br>
+-[] Usar Axios para realizar requisições ao backend. (opcional)<br>
+-[] Implementar WebSocket para atualização em tempo real. (opcional)<br>
 
 ### Funcionalidades do Front End
 -[x] Tela de login: uma tela onde o usuário deve fazer login para acessar a tela de
