@@ -6,6 +6,8 @@ import {
   OutlinedInput,
   InputAdornment,
   IconButton,
+  Typography,
+  Container,
 } from "@mui/material";
 import ImagemDeFundo from "../../../assets/ImagemDeFundo.png";
 import "./Registro-estilo.css";
@@ -22,16 +24,8 @@ export default function AutenticacaoRegistro() {
   const [senha, setSenha] = useState("");
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
 
-  const handleClickShowPassword = () => setShowPassword((show) => !show);
-  const handleMouseDownPassword = (
-    event: React.MouseEvent<HTMLButtonElement>
-  ) => {
-    event.preventDefault();
-  };
-
-  function quandoAvançar() {
+  function handdleSubmit() {
     event?.preventDefault();
     montarObjetoDeRegistro(senha, nome, email);
   }
@@ -83,66 +77,46 @@ export default function AutenticacaoRegistro() {
             </div>
           </div>
         </div>
-        <Grid container sx={{ margin: 10 }}>
-          <form onSubmit={quandoAvançar}>
-            <Grid className="primeiro">
-              <TextField
-                variant="standard"
-                label="Nome completo"
-                type="text"
-                name="nome"
-                required
-                id="nome"
-                onChange={(event) => setNome(event.target.value)}
-                fullWidth
-              />
-              <OutlinedInput
-                id="outlined-adornment-password"
-                fullWidth
-                onChange={(event) => setSenha(event.target.value)}
-                type={showPassword ? "text" : "password"}
-                endAdornment={
-                  <InputAdornment position="end" variant="standard">
-                    <IconButton
-                      aria-label="toggle password visibility"
-                      onClick={handleClickShowPassword}
-                      onMouseDown={handleMouseDownPassword}
-                      edge="end"
-                    >
-                      {showPassword ? <VisibilityOff /> : <Visibility />}
-                    </IconButton>
-                  </InputAdornment>
-                }
-                label="Password"
-              />
-            </Grid>
-            <Grid className="segundo-item">
-              <TextField
-                variant="standard"
-                type="email"
-                name="email"
-                id="email"
-                required
-                label="E-mail"
-                onChange={(event) => setEmail(event.target.value)}
-                fullWidth
-              />
-            </Grid>
-            <div className="botoes">
-              <Button
-                type="submit"
-                id="botao-submit"
-                fullWidth
-                variant="contained"
-              >
-                Avançar
-              </Button>
-              <Button variant="outlined" href="/login">
-                Entrar
-              </Button>
-            </div>
+        <Container maxWidth="sm">
+          <Typography
+            color={"#145ba1"}
+            variant="h4"
+            align="center"
+            gutterBottom
+          >
+            Registre-se
+          </Typography>
+          <form onSubmit={handdleSubmit}>
+            <TextField
+              name="name"
+              label="Nome"
+              variant="outlined"
+              fullWidth
+              margin="normal"
+              onChange={(event) => setNome(event.target.value)}
+            />
+            <TextField
+              name="email"
+              label="E-mail"
+              variant="outlined"
+              fullWidth
+              margin="normal"
+              onChange={(event) => setEmail(event.target.value)}
+            />
+            <TextField
+              name="password"
+              label="Senha"
+              type="password"
+              variant="outlined"
+              fullWidth
+              margin="normal"
+              onChange={(event) => setSenha(event.target.value)}
+            />
+            <Button fullWidth type="submit" variant="contained" color="primary">
+              Registrar
+            </Button>
           </form>
-        </Grid>
+        </Container>
       </div>
     </>
   );

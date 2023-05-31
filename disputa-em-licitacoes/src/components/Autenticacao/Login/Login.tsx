@@ -70,28 +70,27 @@ const AutenticacaoLogin = () => {
     <div>
       <div className="container-login">
         <div className="box">
-          <h1>
-            Faça
+          <h1 className="texto-login">
             <span style={{ color: "#145ba1" }}> Login</span>
           </h1>
           <div style={{ margin: 0 }}>
             <form onSubmit={quandoAvancar}>
               <div className="primeiro-item">
                 <TextField
-                  variant="standard"
                   type="email"
                   name="email"
                   id="email"
+                  className="input-email"
                   required
                   onChange={(event) => setEmail(event.target.value)}
-                  label="E-mail"
-                  fullWidth
+                  label="Email"
                 />
               </div>
               <div style={{ marginBottom: "20px" }}>
                 <OutlinedInput
                   id="outlined-adornment-password"
                   fullWidth
+                  placeholder="Senha"
                   onChange={(event) => setSenha(event.target.value)}
                   type={showPassword ? "text" : "password"}
                   endAdornment={
@@ -110,10 +109,15 @@ const AutenticacaoLogin = () => {
                 />
               </div>
               <div className="botoes">
-                <Button type="submit" fullWidth variant="contained">
+                <Button
+                  type="submit"
+                  className="botao-submit"
+                  fullWidth
+                  variant="contained"
+                >
                   Entrar
                 </Button>
-                <Button variant="outlined" href="/registro">
+                <Button variant="contained" href="/registro">
                   Registro
                 </Button>
               </div>
