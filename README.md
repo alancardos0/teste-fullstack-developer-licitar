@@ -42,5 +42,5 @@ limite de tempo de 10 minutos para cada disputa.<br>
 
 ### Melhorias Futuras
 - [ ] Implementar tela de disputa de lances.
-- [ ] Implementar uma API que permita a criação de disputas e lances.
+- [X] Implementar uma API que permita a criação de disputas e lances.
       
