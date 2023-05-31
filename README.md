@@ -35,8 +35,8 @@ aplicação<br>
 -[x] Usar Class Validator para validar dados de entrada de requisições. (Opcional)<br>
 
 ### Funcionalidades do Back End
--[ ] Implementar uma API que permita a criação de disputas e lances.<br>
--[ ] As disputas devem iniciar automaticamente após o término da anterior, com um
+-[X] Implementar uma API que permita a criação de disputas e lances.<br>
+-[X] As disputas devem iniciar automaticamente após o término da anterior, com um
 limite de tempo de 10 minutos para cada disputa.<br>
 
 
